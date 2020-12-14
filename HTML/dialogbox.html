@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript dialog boxes</title>
+</head>
+<body>
+    <p> There are 3 Dialoge boxes 1) Alert 2)Confirm 3)Prompt</p>
+    <button onclick="hello()">Click me(alert)</button>
+    <br><br>
+    <button onclick="hello1()"> click me(confirm)</button>
+    <br><br>
+    <button onclick="hello2()"> click me(Prompt)</button>
+    <br><br>
+    <button onclick="hello3()"> click me(practice)</button>
+</body>
+<script>
+    function hello()
+    {
+        var x =10;
+        var y=20;
+        alert("The result of the sum is" +(x+y));
+
+    }
+    function hello1()
+    {
+       var x= confirm("Do you want to save the result?");
+       if(x)
+       {
+           alert("User press OK button");
+       }
+       else{
+           alert("User press CANCEL button");
+       }
+    }
+    function hello2(){
+        var x=prompt("Enter your name");
+        if(x.length>0 && x!="null")
+        {
+            alert("Welcome "+ x);
+        }
+        else{
+            alert("Welcome Anonymous");
+        }
+    }
+    function hello3(){
+        var a=parseInt(prompt(" Enter first number"));   // just because inputs are always in the from of string.
+        if(a)
+        {
+        var b= parseInt(prompt("Enter second number"));   // so if we did not use parseint then values would be concatenated insteed of adding.
+        if(b){
+        alert("Sum is "+ (a+b));
+        }
+    }
+    }
+</script>
+</html>
