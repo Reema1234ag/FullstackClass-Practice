@@ -20,7 +20,7 @@ console.log(z);
 var x=10;
 function hello()
 {
-    window.z= 20;               // window.x to use x variable globally
+    window.z= 20;               // window.x to use x variable globally(run this code in brower as window is the object of browser)
     console.log(z);
 }
 hello();
