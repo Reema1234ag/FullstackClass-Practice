@@ -1,0 +1,9 @@
+// javascript variable
+var x;
+x=199;
+y=20;    // here without using var we can initialize the variable but it is not recommended
+y="Reema agrawal"; //reassign the value
+console.log(x);
+console.log(y);
+var z;   // only declaration  then o/p  value will be undefined
+console.log(z);
