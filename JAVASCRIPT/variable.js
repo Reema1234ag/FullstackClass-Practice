@@ -14,3 +14,15 @@ var x=10;
 y=10;    //error in strict mode
 var z=010; //error but in sloppy o/p will be 8
 console.log(z);
+
+//practice
+"use strict"
+var x=10;
+function hello()
+{
+    window.z= 20;               // window.x to use x variable globally
+    console.log(z);
+}
+hello();
+console.log(z);
+console.log(x);
