@@ -6,4 +6,11 @@ y="Reema agrawal"; //reassign the value
 console.log(x);
 console.log(y);
 var z;   // only declaration  then o/p  value will be undefined
+console.log(z);  
+
+// strict mode and sloppy mode in javascript(by default sloppy mode)
+"use strict"
+var x=10;
+y=10;    //error in strict mode
+var z=010; //error but in sloppy o/p will be 8
 console.log(z);
