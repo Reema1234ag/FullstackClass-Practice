@@ -17,3 +17,22 @@ function myfun2(fname2,lname2=0)      //default value of lname1 is 0 here
     console.log("My name is "+ fname2 + lname2)
 }
 myfun2("Reema ","agrawal","mittal")          // it will discard the 3rd argument 
+
+
+
+
+//return 
+
+function hello(x,y)
+{
+    return(x+y);
+}
+var sum=hello(10,24);
+console.log(sum);
+
+function hello1(x,y)
+{
+    return(x+y);
+}
+var sum=hello1(10,"24");             //concatenation of integar and string=string
+console.log(sum);
