@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event  handler</title>
 </head>
+<style>
+    #container{
+        background-color: green;
+        margin:10px auto;
+        width:350px;
+        height:300px;
+    }
+    button{
+        margin: 0 auto;
+        display:block;
+    }
+</style>
 <body>
-    
+  <div id="container"></div>  
+  <button onclick="divclick()">Click me</button>                 <!--HTML attribute handler(onclick)-->
+  <script>
+      function divclick(){
+     var x=document.getElementById("container") ;
+     x.style.background="red";
+      }
+  </script>
 </body>
 </html>
