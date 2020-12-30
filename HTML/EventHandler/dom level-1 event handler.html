@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event  handler</title>
+</head>
+<style>
+    #container{
+        background-color: green;
+        margin:10px auto;
+        width:350px;
+        height:300px;
+    }
+    button{
+        margin: 0 auto;
+        display:block;
+    }
+</style>
+<body>
+  <div id="container"></div>  
+  <button>click me</button>                                     <!--dom level-1 event handler-->
+  <script>
+      //1.dom level-1 event handling //1st way(using anonymous function)
+         var btn=document.querySelector("button");
+    //   btn.onclick=function(){
+    //    document.getElementById("container").style.background="blue";
+    //   };
+      //2,dom level-1 event handling //2nd way(direct function call)
+       btn.onclick= divclick;
+       function divclick(){
+      var x=document.getElementById("container") ;
+      x.style.background="red";
+      }
+      
+  </script>
+</body>
+</html>
