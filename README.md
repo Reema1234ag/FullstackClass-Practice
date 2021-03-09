@@ -1,1 +1,1 @@
-Web developement (front-end only) from beginning
+Javascript from beginning
